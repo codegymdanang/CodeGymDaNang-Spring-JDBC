@@ -1,5 +1,7 @@
 package codegymdanag.spring.jdbc.controller;
 
+import codegymdanag.spring.service.CustomerServiceImpl;
+import codegymdanag.spring.service.CustomerServiceImpl2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +20,9 @@ public class MainController {
 	
 	@RequestMapping("/jdbc")
 	public ModelAndView  getDay04Massage(Model model) {
-		Customer customer01 = customerService.findByCustomerFirstName("Marron");
+
+
+		Customer customer01 = customerService.findByCustomerFirstName("Le");
 		ModelAndView modelAndView = new ModelAndView("jdbc");
 		modelAndView.addObject("finded", customer01);
 		System.out.println(customer01.getLastName());
