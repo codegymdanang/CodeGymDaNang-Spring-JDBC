@@ -17,7 +17,7 @@
     <definition name="home" extends="base.definition">  
         <put-attribute name="body" value="/WEB-INF/views/home.jsp" />  
     </definition>
-    <definition name="jdbc" extends="base.definition">  
+    <definition name="hello" extends="base.definition">
         <put-attribute name="body" value="/WEB-INF/views/hello.jsp" />  
     </definition>
     
